@@ -1,0 +1,6 @@
+Conformance checker integrated with Exctractor and Visualizer.
+Multi-format input enabled (docx, pdf, xlsx, csv, txt).
+Output saved in .csv format on root folder.
+Outputs:
+.csv - Full batch results, Rule-only conformance, Disagreements
+Visualizations - conformance_pie_chart, conformance_table.

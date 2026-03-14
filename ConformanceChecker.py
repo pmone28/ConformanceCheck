@@ -718,3 +718,127 @@ print("\nDone.")
 
 toc = time.perf_counter()
 print(f"Elapsed: {toc - tic:.6f} seconds")
+
+#################################################################################################################################
+    #New Script#
+
+# Load the dataset
+def load_data(file_path):
+    """Load dataset from JSON or CSV file"""
+    if file_path.endswith('.json'):
+        with open(file_path, 'r') as f:
+            data = json.load(f)
+        df = pd.DataFrame(data)
+    elif file_path.endswith('.csv'):
+        df = pd.read_csv(file_path)
+    else:
+        raise ValueError("File must be JSON or CSV format")
+    return df
+
+# Define attributes (all columns except id and raw_text)
+def get_attributes(df):
+    """Get list of attribute columns"""
+    return [col for col in df.columns if col not in ['id', 'raw_text']]
+
+# Calculate violations
+def calculate_violations(df, attributes):
+    """Calculate sum of violations for each attribute"""
+    violations = {}
+    for attr in attributes:
+        violations[attr] = df[attr].sum()
+    return violations
+
+# Create table visualization
+def create_table(violations):
+    """Create a vertical table showing conformity violations"""
+    fig, ax = plt.subplots(figsize=(8, 10))
+    ax.axis('tight')
+    ax.axis('off')
+    
+    # Prepare table data
+    table_data = [['Conformity', 'Violations']]
+    for attr, count in violations.items():
+        table_data.append([attr, int(count)])
+    
+    # Create table
+    table = ax.table(cellText=table_data, loc='center', cellLoc='left')
+    table.auto_set_font_size(False)
+    table.set_fontsize(10)
+    table.scale(1, 2)
+    
+    # Style header row
+    for i in range(2):
+        table[(0, i)].set_facecolor('#4472C4')
+        table[(0, i)].set_text_props(weight='bold', color='white')
+    
+    # Alternate row colors
+    for i in range(1, len(table_data)):
+        for j in range(2):
+            if i % 2 == 0:
+                table[(i, j)].set_facecolor('#D9E1F2')
+    
+    plt.title('Conformance Violations Summary', fontsize=14, weight='bold', pad=20)
+    plt.savefig('conformance_table.png', dpi=300, bbox_inches='tight')
+    print("✓ Table saved as 'conformance_table.png'")
+    plt.close()
+
+# Create pie chart
+def create_pie_chart(violations):
+    """Create a pie chart of violations"""
+    fig, ax = plt.subplots(figsize=(12, 8))
+    
+    labels = list(violations.keys())
+    values = list(violations.values())
+    
+    # Create pie chart
+    wedges, texts, autotexts = ax.pie(
+        values, 
+        labels=labels,
+        autopct=lambda pct: f'{pct:.1f}%\n({int(pct/100.*sum(values))})',
+        startangle=90,
+        textprops={'fontsize': 9}
+    )
+    
+    # Style the text
+    for text in texts:
+        text.set_fontsize(10)
+    for autotext in autotexts:
+        autotext.set_color('white')
+        autotext.set_weight('bold')
+        autotext.set_fontsize(8)
+    
+    plt.title('Distribution of Conformance Violations', fontsize=14, weight='bold', pad=20)
+    plt.savefig('conformance_pie_chart.png', dpi=300, bbox_inches='tight')
+    print("✓ Pie chart saved as 'conformance_pie_chart.png'")
+    plt.close()
+
+# Main function
+def main(file_path):
+    """Main function to process data and generate visualizations"""
+    print(f"Loading data from '{file_path}'...")
+    df = load_data(file_path)
+    print(f"✓ Loaded {len(df)} records")
+    
+    # Get attributes
+    attributes = get_attributes(df)
+    print(f"✓ Found {len(attributes)} attributes: {', '.join(attributes)}")
+    
+    # Calculate violations
+    violations = calculate_violations(df, attributes)
+    print("\nViolation Counts:")
+    for attr, count in violations.items():
+        print(f"  {attr}: {int(count)}")
+    
+    # Generate visualizations
+    print("\nGenerating visualizations...")
+    create_table(violations)
+    create_pie_chart(violations)
+    
+    print("\n✓ All visualizations generated successfully!")
+
+if __name__ == "__main__":
+    # Replace with your data file path
+    #file_path = input("Enter the path to your dataset file (JSON or CSV): ").strip()
+    file_path = "Rule_Conformance.csv"
+    main(file_path)
+
