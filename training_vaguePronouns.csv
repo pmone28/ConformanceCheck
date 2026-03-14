@@ -1,0 +1,112 @@
+﻿text,label
+The Defense Radar System during the Deployment phase must support remote diagnostics and firmware updates.,0
+The Aerospace Avionics System during the Operations phase must detect and report system faults within 100 milliseconds.,0
+The Electrical Power Grid during the Integration phase must achieve a minimum reliability of 99.9% over a 10-year lifecycle.,0
+The Aerospace Avionics System during the Retirement phase must withstand wind speeds up to 100 km/h.,0
+The Marine Propulsion System during the Testing phase must detect structural cracks as small as 0.5 mm.,0
+The Marine Propulsion System during the Deployment phase must process sensor data at a minimum rate of 500 samples per second.,0
+The Civil Engineering Structure during the Deployment phase must withstand a load factor of 1.5 times maximum expected stress.,0
+The Railway Signaling System during the Integration phase must maintain structural integrity under seismic Zone 4 conditions.,0
+The Systems Engineering Integration Platform during the Retirement phase must maintain alignment accuracy within ±0.5 degrees.,0
+The Mechanical HVAC System during the Design phase must maintain pressure vessel integrity up to 1.5 bar.,0
+The Systems Engineering Integration Platform during the Integration phase must maintain alignment accuracy within ±0.5 degrees.,0
+The Civil Engineering Structure during the Testing phase must provide redundancy for all mission-critical subsystems.,1
+"The Spacecraft Thermal Control System during the Development phase must ensure emissions remain below limits, if possible.",0
+The Marine Propulsion System during the Testing phase must detect structural cracks as small as 0.5 mm.,0
+The Automotive Control System during the Design phase must complete data synchronization within 3 minutes.,0
+"The Electrical Power Grid during the Retirement phase must achieve 99.9% reliability, which is the most important metric.",0
+"The Marine Propulsion System during the Design phase must process sensor data, though it should be user-friendly.",1
+The Automotive Control System during the Maintenance phase must complete system startup in under 15 seconds.,0
+The Spacecraft Thermal Control System during the Integration phase must maintain vibration levels below 5 mm/s RMS.,0
+The Systems Engineering Integration Platform during the Retirement phase must maintain alignment accuracy within ±0.5 degrees.,0
+"The Mechanical HVAC System during the Maintenance phase must maintain operational temperature, but this might change if appropriate.",0
+"The Electrical Power Grid during the Integration phase must achieve reliability, but not limited to that metric.",1
+The Automotive Control System during the Deployment phase must complete data synchronization within 3 minutes.,0
+"The Railway Signaling System during the Operations phase must operate continuously, though this is the most efficient approach.",1
+"The Railway Signaling System during the Integration phase must maintain structural integrity, though this requirement is almost always flexible.",0
+"Each SKA1_Low pulsar timing and dynamic spectrum measurement shall be directly traceable to the time at the common delay centre of the SKA1_Low telescope, with an accuracy of better than 1 nanoseconds (TBC).",0
+SKA1_Low shall retain time resolution in the Pulsar Search such that any increase in sampling interval at high dispersion measure trials does not degrade the signal-to-noise ratio below 95% relative to the configured time resolution.,0
+SKA1_Low Pulsar timing subarray shall be set independently with a value between 10 seconds and 300 minutes with a granularity of 10 seconds.,0
+"The SKA1_Low, when forming beams for the Pulsar Search, shall achieve a signal-to-noise of more than 97% relative to an ideal analogue beam-forming for the same inputs.",0
+"The spectral distortion of pulsar search beams, compared to an ideal analogue
+beamformer provided with the same inputs, shall be less than
+• -40 dB in amplitude
+• 0.01 radians in phase.",0
+"SKA1_Low, when commanded, shall form multiple Pulsar Search beams at the same sky coordinates, within a single subarray.",0
+"SKA1_Low Configurability SKA1_Low, when commanded, shall change the CSP, TM, Test pointing, centre frequency, and bandwidth of each VLBI tied-array beam SADT independently, on scan boundaries.",0
+"SKA1_Low, when commanded, shall perform the Pulsar Search on a contiguous bandwidth located anywhere within the SKA1_Low band.",0
+"SKA1_Low subarray shall be independently configurable, with allowed values Inspection being an integer multiple of 0.15 seconds (¬±1%) to a maximum of 36 seconds (¬±1%).",0
+"SKA1_Low, when performing the Pulsar Search, shall generate Pulsar Candidates and Non-imaging Transient Candidates as defined in TBD.",0
+"SKA1_Low, when commanded, shall perform the Pulsar Search for a Pulsar Search beam with a configurable bandwidth from the full pulsar search bandwidth for that beam, down to 0.15 times that bandwidth.",1
+"SKA1_Low, when commanded, shall simultaneously form and process data from up to a total of16 dual-polarization pulsar timing beams for pulsar timing and dynamic spectrum processing.",0
+"The maximum noise leakage from a non adjacent channel into SKA1_Low zoom
+window channels from all frequencies outside the window shall be less than
+60dB.",0
+"SKA1_Low VLBI beams sampling rate SKA1_Low, when forming VLBI beams,
+shall output them with a sampling rate selectable between N",0
+SKA1_Mid shall flag both polarizations of any beamforming input for which one polarization is flagged (or marked invalid).,0
+The SKA1_Low shall have an absolute flux density scale with an accuracy better than 5% across the band.,0
+"When generating zoom windows, SKA1_Low shall on command provide, for each zoom window, 16384 (+/- 10%) linearly spaced frequency channels fully covering the zoom windows.",0
+"The SKA1_Low, when commanded, shall time Pulsars with dispersion measures between 0 to 3000 pc cm -3 such that residual dispersive smearing is less than 500 ns or as limited by the precision of the supplied dispersion measure.",0
+SKA1_Low shall have a continuous Pulsar Search bandwidth of no less than 96 MHz per beam.,0
+"When commanded, SKA1_Low shall archive all or part of the transient buffer SADT based on the results of single-pulse searches, independently for each subarray.",0
+SKA1_Low shall perform observations of the Sun. During these observations the instrument response shall be linear.,1
+"The spectral and temporal response of the individual SKA1_Low visibility
+spectra frequency channels shall not change by more than 1% as a function of
+time, unless explicitly commanded to do so.",0
+SKA1_Low shall restrict the choices of the sampling rate and bandwidth for Pulsar Search to integer sub-multiples of a the fundamental sampling rate.,1
+"For all stations belonging to a given subarray,SKA1_Low, when commanded,
+shall deliver full-polarisation autocorrelation spectra, with frequency coverage,
+spectral resolution, and spectral and temporal response matching that of the
+cross-correlation spectra from that subarray.",0
+Each SKA1_Low subarray shall have a common delay centre at or near its centre with a time accurate to the SKA timescale and a precision of better than 1ns (1œÉ) over periods of one observation and at least 10 years.,0
+"The IFS shall obtain a spectrum of the contiguous science field presented at the IFS input focal plane, FP#1.",0
+The IFS shall provide and support the choice and selection of four spaxel scales as defined in Section 4.3.1.,0
+The IFS shall provide a choice of spectral resolving powers and ranges.,0
+The IFS shall support the selection of one of the spectral bands as defined in Section 4.3.4.,0
+The IFS shall block all electromagnetic signals outside the telescope pupil from entering the IFS.,0
+The IFS shall block all light outside the science field of view.,0
+"The IFS shall rotate with either the field, or the pupil depending, on the mode selected for an observation as described in the OCD [RD3] to be compatible with the telescope kinematics defined in ESO-153081 (AD11), Section 3.1.",0
+The IFS shall host and provide the mechanical support for the NGSS system.,0
+The IFS shall isolate itself from vibration sources generated by the telescope and other Nasmyth hosted equipment.,0
+The IFS shall de-rotate the hosted IFS optical sub-systems and the NGSS system.,0
+"The IFS shall detect, store and transfer the detector data for each spatial and spectral element over the specified observation period to the Instrument Control System (ICS).",0
+The IFS shall isolate itself against vibrations generated in the hosted NGSS during observations.,0
+The IFS shall provide a cold pupil stop.,0
+The IFS Cryostat mass shall be ≤ 7000 kg.,0
+The IFS Pre-Optics mass shall be ≤ 500 kg.,0
+The IFS Field Unit mass shall be ≤ 500 kg.,0
+"Each IFS spectrograph mass shall be ≤ 500 kg. Therefore, the total mass for the four spectrographs when fully populated shall be less than 1000 kg.",0
+"The total mass of the IFS Rotator and Wrap (IRW), fully populated shall not exceeds 10000 kg.",0
+The IFS mass shall not exceed 10000 kg.,0
+The IFS shall deliver a Field-of-view of at least 104 x 151 spatial pixels called a spaxels. ,0
+"Each field of view observed shall be rectangular on sky, with an aspect ratio that shall not exceed 1:1. ",0
+The IFS shall implement four spatial resolution scales for all the wavelength settings as defined the waveband table in AD1. ,0
+"The aspect ratio of each spatial element, as projected on to the sky, shall not exceed 1.1:1.0. ",0
+The visible science detector shall enable binning of up to 4 x 1 pixels (where 1 pixel is in the spectral dispersion direction). ,0
+The IFS design shall be compatible with providing the full field of view for all wavebands as defined in Table 4-1. ,0
+The internal instrument layout and additional shielding if needed to fulfil radiation hardness requirements with the margin specified shall be responsibility of the Instrument Provider.,0
+no single failure of either interface circuit shall propagate to the other one.,1
+The payload shall be compliant with the radiation environment specified in [AD10].,0
+The PL shall allow mounting and removal activities with normal standard tools.,0
+Titanium alloy fasteners shall not be used in safe life applications,0
+The PL shall be designed to avoid the need for special tools and test equipment to maintain calibration,0
+The WFI shall place the fiducials outside the stay-out zones defined in [WFI CAD envelope model].,1
+The PL and the PLC/SC Provider shall ensure that the design of the units and the positioning of the relative attachments points to the PLC provides sufficient accessibility to enable the mounting and removal of the units themselves,1
+The payload shall be in a safe state during launch and when not operated (i.e. during early SVM commissioning).,0
+Payload mechanisms shall include means to determine uniquely their position and status (e.g. open/closed,1
+Average power demand of all instrument units shall be determined using a nominal supply voltage of 50V.,0
+The Instrument Provider shall ensure that the WFI detector active surface position remains within 100 microns (TBC) of the nominal focal plane position defined in the New Athena Coordinate System Document [AD 3].,0
+It shall be possible through the analysis of event and telemetry packets to reconstruct the events causing each FDIR actions.,0
+The WFI shall maintain the lateral displacement of the <OBM fiducials> relative to their corresponding focal plane <datum> of each detector between boresightings with respect to the nominal WFI_FPCS z axis ≤15 µm (TBC) per lateral axis to 95% confidence with temporal statistical interpretation.,0
+The PL shall have an instrument internal ON/OFF switching capability for their electronic units.,1
+The platform shall allocate sufficient on-board memory to store the Instruments Maximum Science Telemetry Data Rates as per requirement R-WFI-IRD-8180.,0
+Power lines and signal lines shall be tested separately. Measurements shall be made for nominal bus voltage to the instrument. The nominal bus voltage shall be measured and confirmed at the DUT side of the LISN (at LISN output) before the test.,0
+The EGSE standard used by the instruments shall be based on EGS-CC (TBC).,1
+Type of connectors at interfaces must comply with the type of associated cable conductors.,1
+The position & stability should be evaluated in a TBD PL mechanical reference frame.,0
+All reference frames shall be right-handed orthogonal triads.,0
+Retention in the design of Instrument single point failures with catastrophic or critical consequences shall be submitted to ESA formal approval with a case-by-case retention rationale.,0
+The Instrument Provider and PLC/SC Prime Contractor shall ensure that mounting and removal of the baffle cover is possible after integration of the instrument onto the PLC.,0
+At least two separate command actions shall be used for the execution of mission-critical and safety-critical functions.,0
+The cleanliness level of Instrument surfaces not sensitive to contamination shall be kept within the levels below at S/C encapsulation (or EOL - TBC).,1

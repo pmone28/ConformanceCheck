@@ -1,0 +1,376 @@
+﻿text,label
+The Defense Radar System during the Deployment phase must support remote diagnostics and firmware updates.,0
+The Aerospace Avionics System during the Operations phase must detect and report system faults within 100 milliseconds.,0
+The Electrical Power Grid during the Integration phase must achieve a minimum reliability of 99.9% over a 10-year lifecycle.,0
+The Aerospace Avionics System during the Retirement phase must withstand wind speeds up to 100 km/h.,0
+The Marine Propulsion System during the Testing phase must detect structural cracks as small as 0.5 mm.,0
+The Marine Propulsion System during the Deployment phase must process sensor data at a minimum rate of 500 samples per second.,0
+The Civil Engineering Structure during the Deployment phase must withstand a load factor of 1.5 times maximum expected stress.,0
+The Railway Signaling System during the Integration phase must maintain structural integrity under seismic Zone 4 conditions.,0
+The Systems Engineering Integration Platform during the Retirement phase must maintain alignment accuracy within ±0.5 degrees.,0
+The Mechanical HVAC System during the Design phase must maintain pressure vessel integrity up to 1.5 bar.,0
+The Systems Engineering Integration Platform during the Integration phase must maintain alignment accuracy within ±0.5 degrees.,0
+The Civil Engineering Structure during the Testing phase must provide redundancy for all mission-critical subsystems.,0
+"The Spacecraft Thermal Control System during the Development phase must ensure emissions remain below limits, if possible.",1
+The Marine Propulsion System during the Testing phase must detect structural cracks as small as 0.5 mm.,0
+The Automotive Control System during the Design phase must complete data synchronization within 3 minutes.,0
+"The Electrical Power Grid during the Retirement phase must achieve 99.9% reliability, which is the most important metric.",0
+"The Marine Propulsion System during the Design phase must process sensor data, though it should be user-friendly.",1
+The Automotive Control System during the Maintenance phase must complete system startup in under 15 seconds.,0
+The Spacecraft Thermal Control System during the Integration phase must maintain vibration levels below 5 mm/s RMS.,0
+The Systems Engineering Integration Platform during the Retirement phase must maintain alignment accuracy within ±0.5 degrees.,0
+"The Mechanical HVAC System during the Maintenance phase must maintain operational temperature, but this might change if appropriate.",1
+"The Electrical Power Grid during the Integration phase must achieve reliability, but not limited to that metric.",0
+The Automotive Control System during the Deployment phase must complete data synchronization within 3 minutes.,0
+"The Railway Signaling System during the Operations phase must operate continuously, though this is the most efficient approach.",0
+"The Railway Signaling System during the Integration phase must maintain structural integrity, though this requirement is almost always flexible.",1
+"Each SKA1_Low pulsar timing and dynamic spectrum measurement shall be directly traceable to the time at the common delay centre of the SKA1_Low telescope, with an accuracy of better than 1 nanoseconds (TBC).",0
+SKA1_Low shall retain time resolution in the Pulsar Search such that any increase in sampling interval at high dispersion measure trials does not degrade the signal-to-noise ratio below 95% relative to the configured time resolution.,0
+SKA1_Low Pulsar timing subarray shall be set independently with a value between 10 seconds and 300 minutes with a granularity of 10 seconds.,0
+"The SKA1_Low, when forming beams for the Pulsar Search, shall achieve a signal-to-noise of more than 97% relative to an ideal analogue beam-forming for the same inputs.",0
+"The spectral distortion of pulsar search beams, compared to an ideal analogue
+beamformer provided with the same inputs, shall be less than
+• -40 dB in amplitude
+• 0.01 radians in phase.",0
+"SKA1_Low, when commanded, shall form multiple Pulsar Search beams at the same sky coordinates, within a single subarray.",0
+"SKA1_Low Configurability SKA1_Low, when commanded, shall change the CSP, TM, Test pointing, centre frequency, and bandwidth of each VLBI tied-array beam SADT independently, on scan boundaries.",0
+"SKA1_Low, when commanded, shall perform the Pulsar Search on a contiguous bandwidth located anywhere within the SKA1_Low band.",0
+"SKA1_Low subarray shall be independently configurable, with allowed values Inspection being an integer multiple of 0.15 seconds (¬±1%) to a maximum of 36 seconds (¬±1%).",0
+"SKA1_Low, when performing the Pulsar Search, shall generate Pulsar Candidates and Non-imaging Transient Candidates as defined in TBD.",0
+"SKA1_Low, when commanded, shall perform the Pulsar Search for a Pulsar Search beam with a configurable bandwidth from the full pulsar search bandwidth for that beam, down to 0.15 times that bandwidth.",0
+"SKA1_Low, when commanded, shall simultaneously form and process data from up to a total of16 dual-polarization pulsar timing beams for pulsar timing and dynamic spectrum processing.",0
+"The maximum noise leakage from a non adjacent channel into SKA1_Low zoom
+window channels from all frequencies outside the window shall be less than
+60dB.",0
+"SKA1_Low VLBI beams sampling rate SKA1_Low, when forming VLBI beams,
+shall output them with a sampling rate selectable between N",0
+SKA1_Mid shall flag both polarizations of any beamforming input for which one polarization is flagged (or marked invalid).,0
+The SKA1_Low shall have an absolute flux density scale with an accuracy better than 5% across the band.,0
+"When generating zoom windows, SKA1_Low shall on command provide, for each zoom window, 16384 (+/- 10%) linearly spaced frequency channels fully covering the zoom windows.",0
+"The SKA1_Low, when commanded, shall time Pulsars with dispersion measures between 0 to 3000 pc cm -3 such that residual dispersive smearing is less than 500 ns or as limited by the precision of the supplied dispersion measure.",1
+SKA1_Low shall have a continuous Pulsar Search bandwidth of no less than 96 MHz per beam.,0
+"When commanded, SKA1_Low shall archive all or part of the transient buffer SADT based on the results of single-pulse searches, independently for each subarray.",1
+SKA1_Low shall perform observations of the Sun. During these observations the instrument response shall be linear.,0
+"The spectral and temporal response of the individual SKA1_Low visibility
+spectra frequency channels shall not change by more than 1% as a function of
+time, unless explicitly commanded to do so.",1
+SKA1_Low shall restrict the choices of the sampling rate and bandwidth for Pulsar Search to integer sub-multiples of a the fundamental sampling rate.,0
+"For all stations belonging to a given subarray,SKA1_Low, when commanded,
+shall deliver full-polarisation autocorrelation spectra, with frequency coverage,
+spectral resolution, and spectral and temporal response matching that of the
+cross-correlation spectra from that subarray.",0
+Each SKA1_Low subarray shall have a common delay centre at or near its centre with a time accurate to the SKA timescale and a precision of better than 1ns (1œÉ) over periods of one observation and at least 10 years.,1
+"The IFS shall obtain a spectrum of the contiguous science field presented at the IFS input focal plane, FP#1.",0
+The IFS shall provide and support the choice and selection of four spaxel scales as defined in Section 4.3.1.,0
+The IFS shall provide a choice of spectral resolving powers and ranges.,0
+The IFS shall support the selection of one of the spectral bands as defined in Section 4.3.4.,0
+The IFS shall block all electromagnetic signals outside the telescope pupil from entering the IFS.,0
+The IFS shall block all light outside the science field of view.,0
+"The IFS shall rotate with either the field, or the pupil depending, on the mode selected for an observation as described in the OCD [RD3] to be compatible with the telescope kinematics defined in ESO-153081 (AD11), Section 3.1.",1
+The IFS shall host and provide the mechanical support for the NGSS system.,0
+The IFS shall isolate itself from vibration sources generated by the telescope and other Nasmyth hosted equipment.,0
+The IFS shall de-rotate the hosted IFS optical sub-systems and the NGSS system.,0
+"The IFS shall detect, store and transfer the detector data for each spatial and spectral element over the specified observation period to the Instrument Control System (ICS).",0
+The IFS shall isolate itself against vibrations generated in the hosted NGSS during observations.,0
+The IFS shall provide a cold pupil stop.,0
+The IFS Cryostat mass shall be ≤ 7000 kg.,0
+The IFS Pre-Optics mass shall be ≤ 500 kg.,0
+The IFS Field Unit mass shall be ≤ 500 kg.,0
+"Each IFS spectrograph mass shall be ≤ 500 kg. Therefore, the total mass for the four spectrographs when fully populated shall be less than 1000 kg.",0
+"The total mass of the IFS Rotator and Wrap (IRW), fully populated shall not exceeds 10000 kg.",0
+The IFS mass shall not exceed 10000 kg.,0
+The IFS shall deliver a Field-of-view of at least 104 x 151 spatial pixels called a spaxels. ,0
+"Each field of view observed shall be rectangular on sky, with an aspect ratio that shall not exceed 1:1. ",0
+The IFS shall implement four spatial resolution scales for all the wavelength settings as defined the waveband table in AD1. ,0
+"The aspect ratio of each spatial element, as projected on to the sky, shall not exceed 1.1:1.0. ",0
+The visible science detector shall enable binning of up to 4 x 1 pixels (where 1 pixel is in the spectral dispersion direction). ,0
+The IFS design shall be compatible with providing the full field of view for all wavebands as defined in Table 4-1. ,0
+The internal instrument layout and additional shielding if needed to fulfil radiation hardness requirements with the margin specified shall be responsibility of the Instrument Provider.,1
+no single failure of either interface circuit shall propagate to the other one.,0
+The payload shall be compliant with the radiation environment specified in [AD10].,0
+The PL shall allow mounting and removal activities with normal standard tools.,0
+Titanium alloy fasteners shall not be used in safe life applications,0
+The PL shall be designed to avoid the need for special tools and test equipment to maintain calibration,0
+The WFI shall place the fiducials outside the stay-out zones defined in [WFI CAD envelope model].,0
+The PL and the PLC/SC Provider shall ensure that the design of the units and the positioning of the relative attachments points to the PLC provides sufficient accessibility to enable the mounting and removal of the units themselves,0
+The payload shall be in a safe state during launch and when not operated (i.e. during early SVM commissioning).,0
+Payload mechanisms shall include means to determine uniquely their position and status (e.g. open/closed,0
+Average power demand of all instrument units shall be determined using a nominal supply voltage of 50V.,0
+The Instrument Provider shall ensure that the WFI detector active surface position remains within 100 microns (TBC) of the nominal focal plane position defined in the New Athena Coordinate System Document [AD 3].,0
+It shall be possible through the analysis of event and telemetry packets to reconstruct the events causing each FDIR actions.,0
+The WFI shall maintain the lateral displacement of the <OBM fiducials> relative to their corresponding focal plane <datum> of each detector between boresightings with respect to the nominal WFI_FPCS z axis ≤15 µm (TBC) per lateral axis to 95% confidence with temporal statistical interpretation.,0
+The PL shall have an instrument internal ON/OFF switching capability for their electronic units.,0
+The platform shall allocate sufficient on-board memory to store the Instruments Maximum Science Telemetry Data Rates as per requirement R-WFI-IRD-8180.,0
+Power lines and signal lines shall be tested separately. Measurements shall be made for nominal bus voltage to the instrument. The nominal bus voltage shall be measured and confirmed at the DUT side of the LISN (at LISN output) before the test.,0
+The EGSE standard used by the instruments shall be based on EGS-CC (TBC).,0
+Type of connectors at interfaces must comply with the type of associated cable conductors.,0
+The position & stability should be evaluated in a TBD PL mechanical reference frame.,0
+All reference frames shall be right-handed orthogonal triads.,0
+Retention in the design of Instrument single point failures with catastrophic or critical consequences shall be submitted to ESA formal approval with a case-by-case retention rationale.,0
+The Instrument Provider and PLC/SC Prime Contractor shall ensure that mounting and removal of the baffle cover is possible after integration of the instrument onto the PLC.,0
+At least two separate command actions shall be used for the execution of mission-critical and safety-critical functions.,0
+The cleanliness level of Instrument surfaces not sensitive to contamination shall be kept within the levels below at S/C encapsulation (or EOL - TBC).,0
+The system shall display the current battery level on the main dashboard.,0
+"The system shall, where possible, display the current battery level on the main dashboard.",1
+The navigation module shall calculate the shortest route between two waypoints within 2 seconds.,0
+"The navigation module shall, as far as is possible, calculate the shortest route between two waypoints.",1
+The software shall encrypt all user credentials using AES-256 encryption prior to storage.,0
+The software shall encrypt all user credentials using AES-256 encryption where practicable.,1
+The radar system shall detect objects within a 500-meter radius with a minimum accuracy of 95%.,0
+The radar system shall detect objects within a 500-meter radius with as much accuracy as possible.,1
+The flight control system shall transmit telemetry data to the ground station every 500 milliseconds.,0
+The flight control system shall transmit telemetry data to the ground station as frequently as necessary.,1
+The user interface shall render all dashboard widgets within 1 second of user login.,0
+"The user interface shall render all dashboard widgets within 1 second of user login, as appropriate.",1
+The database shall maintain a backup of all transaction records for a minimum of 7 years.,0
+The database shall maintain a backup of all transaction records for as long as required.,1
+The autonomous vehicle shall come to a complete stop within 3 meters when an obstacle is detected.,0
+"The autonomous vehicle shall come to a complete stop within a reasonable distance when an obstacle is detected, if practicable.",1
+The medical device shall log all patient vitals at a 1-minute interval and store them in non-volatile memory.,0
+The medical device shall log all patient vitals at a 1-minute interval and store them in non-volatile memory where possible.,1
+The communication module shall retransmit a failed packet up to 3 times before reporting an error.,0
+The communication module shall retransmit a failed packet as many times as necessary before reporting an error.,1
+The power management unit shall switch to battery backup within 20 milliseconds of detecting a grid failure.,0
+The power management unit shall switch to battery backup as quickly as possible upon detecting a grid failure.,1
+The system shall authenticate users using multi-factor authentication for all administrative operations.,0
+"The system shall authenticate users using multi-factor authentication for all administrative operations, if necessary.",1
+The satellite shall orient its solar panels perpendicular to the sun vector during the daylight phase.,0
+"The satellite shall, to the extent practical, orient its solar panels perpendicular to the sun vector during the daylight phase.",1
+The ATM shall dispense cash in the exact denomination requested by the user within 10 seconds.,0
+The ATM shall dispense cash in the denomination requested by the user as much as possible.,1
+The water purification system shall reduce turbidity to below 1 NTU before water enters the distribution network.,0
+The water purification system shall reduce turbidity to as low a level as possible before water enters the distribution network.,1
+The robot arm shall position the end effector within Â±0.1 mm of the target coordinates.,0
+The robot arm shall position the end effector as close as possible to the target coordinates.,1
+The intrusion detection system shall trigger an alert within 5 seconds of detecting unauthorized access.,0
+The intrusion detection system shall trigger an alert as soon as practicable after detecting unauthorized access.,1
+The HVAC system shall maintain the server room temperature between 18Â°C and 24Â°C at all times.,0
+The HVAC system shall maintain the server room temperature between 18Â°C and 24Â°C where possible.,1
+The payment gateway shall return a transaction confirmation or error code within 3 seconds of submission.,0
+The payment gateway shall return a transaction confirmation or error code within a reasonable time where possible.,1
+The emergency braking system shall apply maximum braking force when deceleration exceeds 0.8g.,0
+"The emergency braking system shall apply maximum braking force when deceleration exceeds 0.8g, as appropriate.",1
+The data logger shall record all sensor readings with a timestamp accurate to Â±1 millisecond.,0
+The data logger shall record all sensor readings with a timestamp that is as accurate as possible.,1
+The network switch shall forward packets between ports with a latency not exceeding 5 microseconds.,0
+The network switch shall forward packets between ports with as little latency as possible.,1
+The weather station shall transmit meteorological data to the central server every 15 minutes.,0
+The weather station shall transmit meteorological data to the central server as frequently as practicable.,1
+The fire suppression system shall release suppression agent within 10 seconds of smoke detection confirmation.,0
+"The fire suppression system shall release suppression agent as quickly as possible after smoke detection, if necessary.",1
+The elevator shall reach any requested floor within 60 seconds during normal operating conditions.,0
+"The elevator shall reach any requested floor within a reasonable time, to the extent possible.",1
+The GPS receiver shall acquire a satellite fix within 30 seconds under open-sky conditions.,0
+The GPS receiver shall acquire a satellite fix as fast as possible under open-sky conditions.,1
+The compiler shall produce an error message identifying the line number and type of syntax error.,0
+"The compiler shall produce an error message identifying the line number and type of syntax error, where applicable.",1
+The actuator shall reach the commanded position within 200 milliseconds of receiving the control signal.,0
+"The actuator shall reach the commanded position within 200 milliseconds of receiving the control signal, if practicable.",1
+The solar inverter shall convert DC power to AC power at a minimum efficiency of 97%.,0
+The solar inverter shall convert DC power to AC power at as high an efficiency as possible.,1
+The access control system shall deny entry to unregistered credentials and log the attempt with a timestamp.,0
+The access control system shall deny entry to unregistered credentials and log the attempt where possible.,1
+The spectrum analyzer shall display signal frequency with a resolution of 1 Hz.,0
+The spectrum analyzer shall display signal frequency with as fine a resolution as possible.,1
+The autonomous drone shall return to the launch point when battery charge drops below 15%.,0
+"The autonomous drone shall return to the launch point when battery charge drops to a critically low level, if it should prove necessary.",1
+"The aircraft shall maintain cabin pressure equivalent to an altitude of no more than 8,000 feet during cruise.",0
+The aircraft shall maintain cabin pressure at as comfortable a level as practicable during cruise.,1
+The CNC machine shall complete each cutting pass within the programmed tolerance of Â±0.05 mm.,0
+The CNC machine shall complete each cutting pass within the programmed tolerance to the extent practical.,1
+The substation shall isolate a faulted feeder within 3 cycles of fault detection.,0
+The substation shall isolate a faulted feeder as quickly as necessary after fault detection.,1
+The smart meter shall transmit consumption data to the utility server once every 24 hours.,0
+The smart meter shall transmit consumption data to the utility server as required.,1
+The ventilator shall deliver the prescribed tidal volume with an accuracy of Â±5 mL.,0
+The ventilator shall deliver the prescribed tidal volume with as much accuracy as possible.,1
+The pacemaker shall deliver a pacing pulse within 10 milliseconds of detecting a missed heartbeat.,0
+The pacemaker shall deliver a pacing pulse as soon as practicable after detecting a missed heartbeat.,1
+The train control system shall bring the train to a full stop within 50 meters of an emergency trigger.,0
+"The train control system shall bring the train to a full stop within a safe distance of an emergency trigger, where possible.",1
+The missile guidance system shall update the target coordinates every 100 milliseconds during terminal phase.,0
+The missile guidance system shall update the target coordinates as frequently as necessary during terminal phase.,1
+The surveillance camera shall capture images at a minimum resolution of 1080p at 30 frames per second.,0
+The surveillance camera shall capture images at as high a resolution as possible.,1
+The industrial robot shall complete a welding cycle within 8 seconds per joint.,0
+The industrial robot shall complete a welding cycle as quickly as practicable per joint.,1
+The autonomous submarine shall maintain depth within Â±0.5 meters of the commanded depth.,0
+The autonomous submarine shall maintain depth as close as possible to the commanded depth.,1
+The ticketing system shall issue a confirmed ticket within 4 seconds of payment authorization.,0
+"The ticketing system shall issue a confirmed ticket within a reasonable time of payment authorization, as appropriate.",1
+"The server shall log all failed login attempts with the user ID, timestamp, and IP address.",0
+"The server shall log all failed login attempts with the user ID, timestamp, and IP address where practicable.",1
+The fuel management system shall maintain fuel pressure between 45 PSI and 55 PSI during engine operation.,0
+The fuel management system shall maintain fuel pressure as close to 50 PSI as possible during engine operation.,1
+The bridge monitoring system shall detect structural deflection greater than 10 mm and generate an alert.,0
+The bridge monitoring system shall detect structural deflection and generate an alert to the extent necessary.,1
+The oxygen generation system shall maintain cabin oxygen concentration between 19.5% and 23.5%.,0
+"The oxygen generation system shall maintain cabin oxygen concentration at a safe level, as appropriate.",1
+The anti-lock braking system shall modulate brake pressure at a frequency of 15 Hz when wheel slip is detected.,0
+The anti-lock braking system shall modulate brake pressure as frequently as necessary when wheel slip is detected.,1
+The solar tracker shall align the solar panel with the sun azimuth angle within Â±1 degree.,0
+The solar tracker shall align the solar panel with the sun azimuth angle as closely as possible.,1
+The network firewall shall block all inbound traffic on ports not listed in the approved port table.,0
+The network firewall shall block inbound traffic on unauthorized ports to the extent practical.,1
+The locomotive shall sound an audible warning horn at least 1500 meters before an unguarded level crossing.,0
+"The locomotive shall sound an audible warning horn before an unguarded level crossing, as required.",1
+The imaging system shall produce a contrast-to-noise ratio of at least 20 dB for all target materials.,0
+The imaging system shall produce as high a contrast-to-noise ratio as possible for target materials.,1
+The pipeline monitoring system shall detect leaks with a flow loss greater than 0.5% of nominal flow.,0
+The pipeline monitoring system shall detect leaks to the extent practical.,1
+The nuclear reactor shall initiate a SCRAM within 100 milliseconds of detecting a neutron flux spike above 110% nominal.,0
+The nuclear reactor shall initiate a SCRAM as quickly as possible after detecting an abnormal neutron flux spike.,1
+The weather radar system shall update the precipitation intensity map every 6 minutes.,0
+The weather radar system shall update the precipitation intensity map as frequently as practicable.,1
+The autopilot system shall maintain the aircraft heading within Â±2 degrees of the commanded heading.,0
+The autopilot system shall maintain the aircraft heading as close as possible to the commanded heading.,1
+The cargo handling system shall transfer containers between ship and dock at a rate of 30 containers per hour.,0
+The cargo handling system shall transfer containers between ship and dock as fast as necessary.,1
+The biometric scanner shall verify an enrolled fingerprint within 500 milliseconds with a false acceptance rate below 0.001%.,0
+The biometric scanner shall verify an enrolled fingerprint as quickly as possible with as low a false acceptance rate as practicable.,1
+The exoskeleton shall support a maximum load of 50 kg on the user's back without exceeding 10 N reaction force at the hip.,0
+The exoskeleton shall support loads on the user's back while minimizing hip reaction force as much as possible.,1
+The traffic management system shall adjust signal timing to reduce average vehicle wait time to below 45 seconds.,0
+The traffic management system shall adjust signal timing to reduce vehicle wait time to the extent practical.,1
+The arc fault circuit interrupter shall trip within 0.5 seconds of detecting an arc fault current signature.,0
+The arc fault circuit interrupter shall trip as quickly as necessary upon detecting an arc fault current signature.,1
+The undersea cable system shall transmit data at a minimum rate of 100 Gbps over a distance of 500 km.,0
+The undersea cable system shall transmit data at as high a rate as possible over a distance of 500 km.,1
+The space telescope shall point to any target within a 5-degree exclusion zone of the sun within 30 minutes.,0
+The space telescope shall avoid pointing near the sun and reposition to new targets as rapidly as practicable.,1
+The wastewater treatment plant shall reduce biological oxygen demand to below 20 mg/L in final effluent.,0
+The wastewater treatment plant shall reduce biological oxygen demand in final effluent as much as possible.,1
+The battery management system shall balance cell voltages to within Â±10 mV of the mean cell voltage.,0
+The battery management system shall balance cell voltages to within as tight a tolerance as practicable.,1
+The laser rangefinder shall measure distances between 10 m and 10 km with an accuracy of Â±0.1 m.,0
+The laser rangefinder shall measure distances with as much accuracy as possible across its operational range.,1
+The autonomous tractor shall maintain a straight furrow deviation of no more than Â±2.5 cm across a 500 m field run.,0
+The autonomous tractor shall maintain as straight a furrow as possible during field operation.,1
+The defibrillator shall deliver a 200-joule shock within 5 seconds of the operator pressing the shock button.,0
+The defibrillator shall deliver the prescribed shock energy as quickly as possible after operator command.,1
+The subsea valve actuator shall fully close the valve within 30 seconds of receiving the close command.,0
+The subsea valve actuator shall close the valve as quickly as practicable after receiving the close command.,1
+The satellite communication terminal shall establish a link with a bit error rate below 10â»â¶.,0
+The satellite communication terminal shall establish a link with as low a bit error rate as possible.,1
+The electric vehicle charger shall deliver a minimum of 150 kW of charging power during DC fast charge sessions.,0
+The electric vehicle charger shall deliver as much charging power as practicable during DC fast charge sessions.,1
+The air traffic control system shall present all aircraft within radar range on the display within 4 seconds of detection.,0
+The air traffic control system shall present all detected aircraft on the display as quickly as necessary.,1
+The industrial boiler shall maintain steam pressure at 10 bar Â±0.2 bar during full load operation.,0
+The industrial boiler shall maintain steam pressure as close to 10 bar as possible during full load operation.,1
+The aircraft de-icing system shall remove all ice accumulation from the wing leading edge within 3 minutes of activation.,0
+The aircraft de-icing system shall remove ice accumulation from the wing leading edge as thoroughly as possible.,1
+The collision avoidance system shall issue an audible and visual alert 30 seconds before projected collision.,0
+The collision avoidance system shall issue an alert as soon as practicable before a projected collision.,1
+The hydroelectric turbine shall maintain rotational speed within Â±0.5 rpm of 300 rpm under variable head conditions.,0
+The hydroelectric turbine shall maintain rotational speed as close to 300 rpm as possible under variable head conditions.,1
+The robotic surgery system shall limit tool tip force feedback to 5 N during tissue contact.,0
+The robotic surgery system shall limit tool tip force feedback to as low a level as practicable during tissue contact.,1
+The digital tachograph shall record vehicle speed at 1-second intervals with an accuracy of Â±1 km/h.,0
+The digital tachograph shall record vehicle speed at 1-second intervals with as much accuracy as possible.,1
+The water desalination plant shall produce potable water with a salinity below 500 ppm TDS.,0
+The water desalination plant shall produce potable water with salinity as low as practicable.,1
+The satellite attitude control system shall stabilize the satellite to within 0.01 degrees of the target attitude within 60 seconds.,0
+The satellite attitude control system shall stabilize the satellite to the target attitude as quickly and accurately as possible.,1
+The radiation monitoring system shall trigger an evacuation alarm when dose rate exceeds 10 mSv/h.,0
+"The radiation monitoring system shall trigger an evacuation alarm when dose rate reaches a dangerous level, as appropriate.",1
+The autonomous forklift shall navigate warehouse aisles without contact with shelving or inventory.,0
+The autonomous forklift shall navigate warehouse aisles while avoiding shelving and inventory to the extent practicable.,1
+The dam overflow spillway shall discharge at a rate of 1500 mÂ³/s when reservoir level exceeds 98% capacity.,0
+The dam overflow spillway shall discharge at as high a rate as necessary when reservoir levels are critical.,1
+The signal processing unit shall filter noise from the input signal with a signal-to-noise ratio improvement of at least 20 dB.,0
+The signal processing unit shall filter noise from the input signal to improve signal-to-noise ratio as much as possible.,1
+The turbofan engine shall produce a minimum thrust of 180 kN at sea level standard conditions.,0
+The turbofan engine shall produce as much thrust as possible under sea level standard conditions.,1
+The warehouse management system shall locate any stored item in inventory within 2 seconds of query submission.,0
+The warehouse management system shall locate stored items in inventory as quickly as practicable.,1
+The oscilloscope shall sample analog signals at a minimum rate of 1 GSa/s.,0
+The oscilloscope shall sample analog signals at as high a rate as possible.,1
+The nuclear waste containment vessel shall prevent external radiation exposure above 1 mSv/year at 1 meter distance.,0
+The nuclear waste containment vessel shall minimize external radiation exposure to the extent practicable.,1
+The railway signalling system shall clear a proceed aspect only when the block ahead is confirmed unoccupied.,0
+"The railway signalling system shall clear a proceed aspect only when it is sufficiently safe to do so, where possible.",1
+The hypersonic vehicle shall maintain structural temperature below 1650Â°C on leading edge surfaces.,0
+The hypersonic vehicle shall maintain structural temperature on leading edge surfaces as low as possible.,1
+The autonomous lawnmower shall complete a 500 mÂ² lawn in under 45 minutes.,0
+The autonomous lawnmower shall complete a 500 mÂ² lawn in as short a time as practicable.,1
+The smart grid controller shall shed non-critical loads within 100 milliseconds of detecting grid overload.,0
+The smart grid controller shall shed non-critical loads as quickly as necessary when grid overload is detected.,1
+The contact lens manufacturing system shall produce lenses with a base curve tolerance of Â±0.05 mm.,0
+The contact lens manufacturing system shall produce lenses with as tight a base curve tolerance as possible.,1
+The shipboard fire detection system shall identify the cabin of origin of a fire within 10 seconds of detector activation.,0
+The shipboard fire detection system shall identify the origin of a fire as quickly as practicable after detector activation.,1
+The electric motor controller shall limit peak phase current to 400 A during regenerative braking.,0
+The electric motor controller shall limit peak phase current to as low a value as necessary during regenerative braking.,1
+The air separation unit shall deliver oxygen with a purity of at least 99.5% by volume.,0
+The air separation unit shall deliver oxygen with as high a purity as practicable.,1
+The deep space probe shall maintain communications with Earth at a data rate of at least 10 kbps at 5 AU.,0
+The deep space probe shall maintain communications with Earth at the highest possible data rate at extended range.,1
+The industrial press shall apply a stamping force of 500 kN Â±5 kN to the workpiece.,0
+The industrial press shall apply as consistent a stamping force as practicable to the workpiece.,1
+The underwater pipeline inspection vehicle shall travel at a speed of 0.5 m/s along the pipeline axis.,0
+The underwater pipeline inspection vehicle shall travel at as steady a speed as possible along the pipeline axis.,1
+The smart building energy management system shall reduce HVAC energy consumption by at least 15% compared to baseline.,0
+The smart building energy management system shall reduce HVAC energy consumption as much as possible.,1
+The surgical robot shall hold a specified position to within Â±0.05 mm under an applied force of 2 N.,0
+The surgical robot shall hold a specified position as steadily as practicable under applied forces.,1
+The wind turbine shall pitch the blades to 90 degrees feathered position within 5 seconds of an emergency stop command.,0
+The wind turbine shall pitch the blades to the feathered position as quickly as possible after an emergency stop command.,1
+The teleoperated robot shall replicate the operator's hand motion with a positional error not exceeding 2 mm.,0
+The teleoperated robot shall replicate the operator's hand motion with as little positional error as practicable.,1
+The hydrogen fuel cell shall sustain a minimum output power of 80 kW at steady state operating conditions.,0
+The hydrogen fuel cell shall sustain as high an output power as possible at steady state operating conditions.,1
+The power line communication modem shall achieve a data throughput of at least 500 kbps over medium voltage lines.,0
+The power line communication modem shall achieve as high a data throughput as practicable over medium voltage lines.,1
+The concrete pump shall deliver concrete at a flow rate of 80 mÂ³/h at a pressure of 70 bar.,0
+The concrete pump shall deliver concrete at as high a flow rate as practicable at nominal pressure.,1
+The airborne early warning system shall detect fighter-sized targets at a minimum range of 400 km.,0
+The airborne early warning system shall detect fighter-sized targets at as great a range as possible.,1
+The medical infusion pump shall deliver medication at a programmed rate of 0.1 mL/h with an accuracy of Â±5%.,0
+The medical infusion pump shall deliver medication at the programmed rate with as much accuracy as possible.,1
+The offshore platform blowout preventer shall seal the wellbore within 15 seconds of a well control event.,0
+"The offshore platform blowout preventer shall seal the wellbore as quickly as possible after a well control event, if practicable.",1
+The railway track geometry measurement vehicle shall detect gauge deviations greater than Â±2 mm from nominal.,0
+The railway track geometry measurement vehicle shall detect gauge deviations to the extent possible.,1
+The plasma cutting machine shall cut steel plate up to 50 mm thick with a kerf width not exceeding 2 mm.,0
+The plasma cutting machine shall cut steel plate with as narrow a kerf width as possible.,1
+The pharmaceutical filling line shall dispense liquid volumes between 1 mL and 100 mL with an accuracy of Â±0.5%.,0
+The pharmaceutical filling line shall dispense liquid volumes with as much accuracy as practicable.,1
+The thermal imaging camera shall detect temperature differences of 0.05Â°C or greater within its field of view.,0
+The thermal imaging camera shall detect as small a temperature difference as possible within its field of view.,1
+The launch vehicle shall deliver the payload to orbit with a velocity error not exceeding 2 m/s.,0
+The launch vehicle shall deliver the payload to orbit with as little velocity error as possible.,1
+The desalination plant shall operate with a specific energy consumption not exceeding 3.5 kWh per cubic meter of product water.,0
+The desalination plant shall operate with as low a specific energy consumption as practicable.,1
+The road surface condition sensor shall detect black ice presence and report to the traffic management center within 2 seconds.,0
+The road surface condition sensor shall detect black ice and report to the traffic management center as quickly as necessary.,1
+The aircraft engine health monitoring system shall detect a reduction in turbine efficiency of 2% or greater.,0
+The aircraft engine health monitoring system shall detect turbine efficiency degradation to the extent practicable.,1
+The robotic palletizer shall stack boxes to a maximum height of 1.8 m with a positional accuracy of Â±5 mm.,0
+The robotic palletizer shall stack boxes with as much positional accuracy as possible.,1
+The submarine periscope system shall resolve targets at a range of 5 km with an angular resolution of 0.1 mrad.,0
+The submarine periscope system shall resolve targets at maximum range with as much angular resolution as possible.,1
+The industrial gas turbine shall achieve full load from standstill within 20 minutes.,0
+The industrial gas turbine shall achieve full load from standstill as quickly as practicable.,1
+The civil infrastructure monitoring system shall detect crack widths of 0.1 mm or greater in concrete structures.,0
+The civil infrastructure monitoring system shall detect as small a crack width as possible in concrete structures.,1
+The smart irrigation system shall deliver water at a rate that maintains soil moisture between 30% and 60% field capacity.,0
+The smart irrigation system shall deliver water to maintain soil moisture at as optimal a level as possible.,1
+The audio amplifier shall produce an output power of 500 W with a total harmonic distortion below 0.01%.,0
+The audio amplifier shall produce 500 W output power with as low a total harmonic distortion as practicable.,1
+The fuel cell vehicle shall travel a minimum of 500 km on a full tank of hydrogen under WLTP test conditions.,0
+The fuel cell vehicle shall travel as far as possible on a full tank of hydrogen under standard test conditions.,1
+The 3D printer shall produce parts with a layer thickness of 0.1 mm and a dimensional accuracy of Â±0.2 mm.,0
+The 3D printer shall produce parts with as thin a layer thickness and as high a dimensional accuracy as possible.,1
+The voice recognition system shall correctly transcribe spoken commands with an accuracy of at least 98% in a 65 dB noise environment.,0
+The voice recognition system shall correctly transcribe spoken commands with as high an accuracy as possible.,1
+The deep learning inference engine shall classify input images within 20 milliseconds on the target hardware.,0
+The deep learning inference engine shall classify input images as quickly as practicable on the target hardware.,1
+The chemical reactor shall maintain reaction temperature at 85Â°C Â±1Â°C throughout the batch cycle.,0
+The chemical reactor shall maintain reaction temperature as close to 85Â°C as possible throughout the batch cycle.,1
+The digital oscilloscope shall store a minimum of 100 million samples in acquisition memory.,0
+The digital oscilloscope shall store as many samples as possible in acquisition memory.,1
+The GPS-denied navigation system shall maintain position accuracy to within 10 meters over a 30-minute mission.,0
+The GPS-denied navigation system shall maintain position accuracy to within as tight a bound as practicable over a 30-minute mission.,1
+The cargo aircraft shall maintain a level flight altitude within Â±50 feet of the assigned flight level.,0
+The cargo aircraft shall maintain a level flight altitude as close as possible to the assigned flight level.,1

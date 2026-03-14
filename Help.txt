@@ -1,0 +1,18 @@
+Steps to run conformance checker: 
+
+Run Extractor_LocalNLP_Ver2.py.
+It consists of:
+1. Input extractor
+2. Conformance checker main function
+3. Visualization script
+
+
+Functions to be updated for every new rule:
+
+1. new rule file
+2. training.py
+3. loading.py
+4. file_checks.py
+5. evaluation.py
+6. conformance.py
+7. batch.py

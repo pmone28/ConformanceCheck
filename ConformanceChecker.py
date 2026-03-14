@@ -50,7 +50,9 @@ import time
 
 import matplotlib.pyplot as plt
 
+tic = time.perf_counter()
 
+print("\n========== Input Extractor ==========")
 
 # Load spaCy model once (AI component)
 nlp = spacy.load("en_core_web_sm")
@@ -697,12 +699,15 @@ def main():
 if __name__ == "__main__":
     main()
 
+toc = time.perf_counter()
+print(f"\nElapsed: {toc - tic:.6f} seconds")
+
 #################################################################################################################################
     #New Script#
     
 tic = time.perf_counter()
 
-print("\n=== Hybrid Conformance Checker ===")
+print("\n========== Conformance Checker ==========")
 
 if not classifiers_exist():
     print("\nNo trained classifiers found. Training models for the first time...")
@@ -717,11 +722,13 @@ batch_process_csv()
 print("\nDone.")
 
 toc = time.perf_counter()
-print(f"Elapsed: {toc - tic:.6f} seconds")
+print(f"\nElapsed: {toc - tic:.6f} seconds")
 
 #################################################################################################################################
     #New Script#
+tic = time.perf_counter()
 
+print("\n========== Conformance Output Visualization ==========")
 # Load the dataset
 def load_data(file_path):
     """Load dataset from JSON or CSV file"""
@@ -742,10 +749,10 @@ def get_attributes(df):
 
 # Calculate violations
 def calculate_violations(df, attributes):
-    """Calculate sum of violations for each attribute"""
+    """Calculate count of violations (0's) for each attribute"""
     violations = {}
     for attr in attributes:
-        violations[attr] = df[attr].sum()
+        violations[attr] = (df[attr]).sum()
     return violations
 
 # Create table visualization
@@ -782,34 +789,79 @@ def create_table(violations):
     print("✓ Table saved as 'conformance_table.png'")
     plt.close()
 
-# Create pie chart
-def create_pie_chart(violations):
-    """Create a pie chart of violations"""
-    fig, ax = plt.subplots(figsize=(12, 8))
+# Create bar chart
+def create_bar_chart(df, attributes):
+    """Create a grouped bar chart showing violations (0's) and conforming (1's) for each attribute"""
+    fig, ax = plt.subplots(figsize=(14, 8))
     
-    labels = list(violations.keys())
-    values = list(violations.values())
+    violations = []
+    conforming = []
     
-    # Create pie chart
-    wedges, texts, autotexts = ax.pie(
-        values, 
-        labels=labels,
-        autopct=lambda pct: f'{pct:.1f}%\n({int(pct/100.*sum(values))})',
-        startangle=90,
-        textprops={'fontsize': 9}
-    )
+    for attr in attributes:
+        violations.append((df[attr] == 1).sum())
+        conforming.append((df[attr] == 0).sum())
     
-    # Style the text
-    for text in texts:
-        text.set_fontsize(10)
-    for autotext in autotexts:
-        autotext.set_color('white')
-        autotext.set_weight('bold')
-        autotext.set_fontsize(8)
+    x = range(len(attributes))
+    width = 0.35
     
-    plt.title('Distribution of Conformance Violations', fontsize=14, weight='bold', pad=20)
-    plt.savefig('conformance_pie_chart.png', dpi=300, bbox_inches='tight')
-    print("✓ Pie chart saved as 'conformance_pie_chart.png'")
+    bars1 = ax.bar([i - width/2 for i in x], violations, width, label='Violating (0)', color='#E74C3C')
+    bars2 = ax.bar([i + width/2 for i in x], conforming, width, label='Conforming (1)', color='#27AE60')
+    
+    ax.set_xlabel('Attributes', fontsize=12, weight='bold')
+    ax.set_ylabel('Count', fontsize=12, weight='bold')
+    ax.set_title('Conformance Analysis: Violations vs Conforming by Attribute', fontsize=14, weight='bold', pad=20)
+    ax.set_xticks(x)
+    ax.set_xticklabels(attributes, rotation=45, ha='right')
+    ax.legend(fontsize=11)
+    ax.grid(axis='y', alpha=0.3)
+    
+    # Add value labels on bars
+    for bars in [bars1, bars2]:
+        for bar in bars:
+            height = bar.get_height()
+            ax.text(bar.get_x() + bar.get_width()/2., height,
+                   f'{int(height)}',
+                   ha='center', va='bottom', fontsize=9)
+    
+    plt.tight_layout()
+    plt.savefig('conformance_bar_chart.png', dpi=300, bbox_inches='tight')
+    print("✓ Bar chart saved as 'conformance_bar_chart.png'")
+    plt.close()
+
+# Create violation histogram
+def create_violation_histogram(df, attributes):
+    """Create a histogram showing the distribution of violation counts per statement"""
+    fig, ax = plt.subplots(figsize=(12, 7))
+    
+    # Count violations (0's) for each statement
+    violation_counts = {}
+    for idx, row in df.iterrows():
+        count = sum(1 for attr in attributes if row[attr])
+        violation_counts[count] = violation_counts.get(count, 0) + 1
+    
+    # Sort by violation count
+    counts = sorted(violation_counts.keys())
+    frequencies = [violation_counts[c] for c in counts]
+    
+    # Create histogram
+    bars = ax.bar(counts, frequencies, color='#3498DB', edgecolor='#2C3E50', linewidth=1.5)
+    
+    ax.set_xlabel('Number of Violations per Statement', fontsize=12, weight='bold')
+    ax.set_ylabel('Number of Statements', fontsize=12, weight='bold')
+    ax.set_title('Distribution of Violation Counts Across All Statements', fontsize=14, weight='bold', pad=20)
+    ax.set_xticks(counts)
+    ax.grid(axis='y', alpha=0.3)
+    
+    # Add value labels on bars
+    for bar in bars:
+        height = bar.get_height()
+        ax.text(bar.get_x() + bar.get_width()/2., height,
+               f'{int(height)}',
+               ha='center', va='bottom', fontsize=10, weight='bold')
+    
+    plt.tight_layout()
+    plt.savefig('conformance_violation_histogram.png', dpi=300, bbox_inches='tight')
+    print("✓ Violation histogram saved as 'conformance_violation_histogram.png'")
     plt.close()
 
 # Main function
@@ -832,13 +884,17 @@ def main(file_path):
     # Generate visualizations
     print("\nGenerating visualizations...")
     create_table(violations)
-    create_pie_chart(violations)
+    create_bar_chart(df, attributes)
+    create_violation_histogram(df, attributes)
     
     print("\n✓ All visualizations generated successfully!")
 
 if __name__ == "__main__":
     # Replace with your data file path
     #file_path = input("Enter the path to your dataset file (JSON or CSV): ").strip()
-    file_path = "Rule_Conformance.csv"
+    file_path = "Output_Rule_Conformance.csv"
     main(file_path)
+
+toc = time.perf_counter()
+print(f"\nElapsed: {toc - tic:.6f} seconds")
 

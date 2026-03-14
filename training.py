@@ -5,15 +5,15 @@ from sklearn.linear_model import LogisticRegression
 from sbert import model
 
 def load_training_data_csv(
-    neg_csv="negation.csv",
-    voice_csv="voice.csv",
-    super_csv="superlatives.csv",
-    subj_csv="subLang.csv",
-    vaguePronouns_csv="vaguePronouns.csv",
-    ambiguousAd_csv="AmbiguousAd.csv",
-    compPhrase_csv="ComparativePhrases.csv",
-    loophole_csv="Loopholes.csv",
-    OpenEnded_csv="OpenEnded.csv"
+    neg_csv="training_negation.csv",
+    voice_csv="training_voice.csv",
+    super_csv="training_superlatives.csv",
+    subj_csv="training_subLang.csv",
+    vaguePronouns_csv="training_vaguePronouns.csv",
+    ambiguousAd_csv="training_AmbiguousAd.csv",
+    compPhrase_csv="training_ComparativePhrases.csv",
+    loophole_csv="training_Loopholes.csv",
+    OpenEnded_csv="training_OpenEnded.csv"
 ):
     # Check all required files exist
     for path in [neg_csv, voice_csv, super_csv, subj_csv, vaguePronouns_csv, ambiguousAd_csv, compPhrase_csv, loophole_csv, OpenEnded_csv]:

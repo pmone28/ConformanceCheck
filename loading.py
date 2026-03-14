@@ -2,7 +2,7 @@ import joblib
 
 def load_classifiers():
     neg = joblib.load("negation_classifier.pkl")
-    voice = joblib.load("voice_classifier.pkl")
+    #voice = joblib.load("voice_classifier.pkl")
     superl = joblib.load("superlatives_classifier.pkl")
     subLan = joblib.load("subjective_classifier.pkl")
     vagueP = joblib.load("vagueP_classifier.pkl")
@@ -11,4 +11,5 @@ def load_classifiers():
     loophole = joblib.load("loophole_classifier.pkl")
     openEnd = joblib.load("openEnd_classifier.pkl")
     
-    return neg, voice, superl,subLan, vagueP, ambiguousAd, compPhrase, loophole, openEnd
+    #return neg, voice, superl,subLan, vagueP, ambiguousAd, compPhrase, loophole, openEnd
+    return neg, superl,subLan, vagueP, ambiguousAd, compPhrase, loophole, openEnd
