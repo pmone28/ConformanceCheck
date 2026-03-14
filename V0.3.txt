@@ -1,0 +1,7 @@
+Conformance checker integrated with Exctractor.
+Multi-format input enabled (docx, pdf, xlsx, csv, txt).
+Output saved in .csv format on root folder.
+Outputs:
+Full batch results
+Rule-only conformance
+Disagreements
